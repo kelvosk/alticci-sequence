@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  alticci-sequence:
+    image: kelvosk/alticci-sequence:0.0.1
+    container_name: alticci-sequence
+    ports:
+      - "8080:8080"
+    networks:
+      - alticci
+networks:
+  alticci:
+    driver: bridge
